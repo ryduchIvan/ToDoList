@@ -1,0 +1,126 @@
+@font-face {
+	font-family: Poppins-M;
+	src: url(fonts/Poppins-Medium.ttf);
+}
+body{
+	background-color: beige;
+	font-family: Poppins-M;
+}
+.wrapper {
+	padding: 30px;
+	border-radius: 12px;
+	background-color: white;
+	max-width: 500px;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.35);
+	margin: 0px auto;
+	text-align:  center;
+	border: 1px solid rgb(251, 183, 56);
+}
+.title {
+	font-family: Poppins-M;
+}
+.flex-wrapper {
+	width: 100%;
+}
+.add-todo-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.input-wrapper{
+	width: 85%;
+}
+.input-wrapper input{
+	width: 85%;
+	height: 40px;
+	border-radius: 5px;
+	border: 2px solid rgb(251, 183, 56);
+	background-color: rgb(251, 250, 229);
+	font-size: 20px;
+	color: black;
+	font-weight: Bold;
+}
+
+.button-wrapper {
+}
+.add-task-butn {
+	height: 47px;
+	width: 80px;
+	margin-left: 10px;
+	background-color: rgb(251, 183, 56);
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	cursor: pointer;
+}
+.add-task-butn:hover{
+	background-color: rgb(247, 200, 113);
+}
+.todos_box{
+	padding: 50px;
+	border-radius: 12px;
+	background-color: white;
+	max-width: 600px;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.35);
+	margin: 0px auto;
+	text-align:  center;
+	margin-top: 30px;
+}
+.todos-wrapper {
+	
+}
+.todo-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px dashed rgb(251, 183, 56);
+	padding-bottom: 5px;
+	margin-bottom: 25px;
+}
+.desckription {
+	font-family: Poppins-M;
+	font-size: 20px;
+}
+.buttons {
+}
+.btn-complete {
+	width: 15px;
+	height: 15px;
+}
+.btn-delete {
+	background-color:white;
+	border: none;
+	padding: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.btn-delete img{
+	width: 22px;
+	height: 22px;
+}
+.checked {
+	background-color: rgb(198, 198, 198);
+}
+
+.deletion{
+	animation: opacity 1s ease;
+}
+@keyframes opacity {
+	from{
+		opacity: 1;
+	} to{
+		opacity: 0;
+	}
+}
+
+.completed{
+	opacity: 0.5;
+	background-color: rgb(247, 200, 113);
+	border-radius: 2px;
+}
+.completed .btn-delete {
+	background-color: rgb(247, 200, 113);
+}
